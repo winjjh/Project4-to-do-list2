@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>>
+
+</head>
+<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://rawgit.com/wwilsman/Datepicker.js/master/dist/css/datepicker.material.css">
+
+<div class="main-container">
+		<div class="main-wrapper">
+			<p id="nowDate" class="now-date"></p>
+			<div class="control-wrapper">
+				
+
+				<div class="priorityWrap">
+					<select class="priorSelect" id="mainSelect">
+						<option value="no" >No</option>
+						<option value="low" >Low</option>
+						<option value="middle" >Middle</option>
+						<option value="high" >High</option>
+					</select>
+					<label for="mainSelect">Choose Priority</label>
+				</div>
+				
+				<div class="dateWrap">
+					<input type="text" class="date" id="datepicker">
+					<label for="anyDate">Choose Date</label>
+				</div>
+				
+				<div class="addTodoWrap">
+					<input id="addTodo" type="text" class="new-task" placeholder="Add To Do"/>
+
+					<button id="addTodoBtn" class="add-task">
+						<i class="add-task__icon fas fa-plus circle-icon"></i>
+					</button>
+				</div>
+				
+			</div>
+			<ul id="todos" class="main-list"></ul>
+		</div>
+	</div>
+
+<script src="https://rawgit.com/wwilsman/Datepicker.js/master/dist/datepicker.js"></script> 
+</body>
+</html>
